@@ -4,34 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrickTown</title>
+    <style>
+        li {
+            font-size: 2vh;
+        }
+        body{
+            padding: 0; 
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            display:flex;
+            flex: 1;
+            flex-wrap:wrap;
+
+        }
+        body > *{
+            box-shadow: 0px 0px 25px 1px grey;
+
+        }
+        #banner {
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
+            box-sizing: content-box;
+            background-color: green; 
+            width: 100%;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            z-index: 1;
+        }
+        #content {
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
+            box-sizing: content-box;
+            width: 100%;
+            z-index: 1000;
+        }
+    </style>
 </head>
 <body>
-    <div style="background-color: green; width: 100vw; height: 10vh;">
+    <div id="banner">
         <h1 style="color: pink">Graphics design is my passion</h1>
     </div>
-    <h2>Installation instructions</h2>
-    <h3>(This will be even more streamlined in the future)</h2>
-    <ol>
-        <li>Download <a href="https://atlauncher.com/downloads">ATLauncher</a> (The .jar file is a portable version)</li>
-        
-        <li>Once installed, log in with your minecraft account.</li>
-        <li>Press the "Instances" button, and select "import" in the top left of the window</li>
-        <li>Give it this .zip folder: <a href="https://github.com/FrickTown/MC/blob/main/FrickTown_Client.zip?raw=true">Download</a></li>
-        <li>Once it's finished, start the instance.</li>
-        <li>Add server with ip: <b>mc.dovas.se</b></li>
-        <li>Have fun!</li>
-    </ol>
+    <section id="content">
+        <h2>Installation instructions</h2>
+        <h3>(This will potentially be even more streamlined in the future)</h3>
+        <ol>
+            <li>Download <a href="https://atlauncher.com/downloads">ATLauncher</a> (The .jar file is a portable version)</li>
+            
+            <li>Once installed, log in with your minecraft account.</li>
+            <li>Press the "Instances" button, and select "import" in the top left of the window</li>
+            <li>Give it this .zip folder: <a href="https://github.com/FrickTown/MC/blob/main/FrickTown_Client.zip?raw=true">Download</a (You can also right click and copy the link and give it to the lanucher.)></li>
+            <li>Once it's finished setting up, start the instance.</li>
+            <li>Add a server with ip: <b>mc.dovas.se</b></li>
+            <li>Have fun!</li>
+        </ol>
 
-    <h2>Mod briefing</h2>
-    <h3>(More details soon)</h2>
-    <ol>
-        <li>CC: Tweaked (Programmable computers)</li>
-        <li>Thermal Expansion (Tech/industry mod)</li>
-        <li>Botania (Magical botany mod)</li>
-        <li>CarryOn (Pick up chests without breaking them)</li>
-        <li>JustEnoughItems (See item recipes in your inventory)</li>
-        <li>JourneyMap (Minimap in top right, set waypoints)</li>
-        <li>Waystones (Teleportation beacons that use XP, allows distant places to be connected)</li>
-    </ol>
+        <h2>Mod briefing and documentation links</h2>
+        <ol>
+            <li><h4><b><a href="https://tweaked.cc/">CC: Tweaked</a></b> (Programmable computers)</h4></li>
+                <ul>
+                    <li>Fully integrated custom OS shell</li>
+                    <li>LUA Scripting Language (Python-like syntax) </li>
+                    <li>Sensors and detectors can automate behaviour</li>
+                    <li>Robots can mine, sort inventories, harvest crops, etc.</li>
+                    <li>(How I learned programming)</li>
+                </ul>
+            <li><h4><b><a href="https://teamcofh.com/docs/">Thermal Series (Expansion, Dynamics, Cultivation)</a></b> (Tech/industrial mod)</h4></li>
+                <ul>
+                    <li>Process materials futher than before</li>
+                    <li>Create complex machines that can automate chores</li>
+                    <li>Craft powered armor and weapons</li>
+                </ul>
+            <li><h4><b>Botania</b> (Magical botany mod)</h4></li>
+                <ul>
+                    <li>Everything you need to know, along with a progression system, can be found in the Lexica Botanica book that you should spawn with. It is otherwise easy to craft.</li>
+                </ul>
+            <li><h4><b>CarryOn</b> (Pick up chests without breaking them)</h4></li>
+                <ul>
+                    <li>Just bind a key (shift by default) to hold while right clicking a chest to pick it up. You move slower and cannot use tools while carrying a chest.</li>
+                </ul>
+            <li><h4><b>JustEnoughItems</b> (Search for, and see item recipes in your inventory)</h4></li>
+            <li><h4><a href="https://teamjm.github.io/journeymap-docs/latest/"><b>JourneyMap</b></a> (Minimap in corner of screen, set waypoints)</li>
+                <ul>
+                    <li>Doesn't really need the documentation, just use the in-game map menu by pressing J (by default).</li>
+                    <li>Bind hotkey controls in the Controls tab in-game.</li>
+                </ul>
+            <li><h4><a href="https://mods.twelveiterations.com/mc/waystones/"><b>Waystones</b></a> (Teleportation beacons that use XP, allows distant places to be connected)</li>
+                <ul>
+                    <li>Waystones can also be found already placed in most villages.</li>
+                </ul>
+        </ol>
+    </section>
 </body>
 </html>
